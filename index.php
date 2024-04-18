@@ -9,7 +9,7 @@ use Google\Service\Sheets;
 $client = new Client();
 $client->setApplicationName('Nome do seu aplicativo');
 $client->setScopes([Sheets::SPREADSHEETS]); // Escopos necessários para gravação
-$client->setAuthConfig('./client_secret.json'); // Configurar o token de acesso
+$client->setAuthConfig('${CLIENT_SECRET}'); // Configurar o token de acesso
 $client->setAccessType('offline');
 
 // Inicializar o serviço do Google Sheets

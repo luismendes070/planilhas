@@ -1,6 +1,5 @@
 <?php
 // ChatGPT
-<?php
 
 require __DIR__ . '/vendor/autoload.php'; // Carregar o autoloader do Composer
 
@@ -10,7 +9,7 @@ use Google\Service\Sheets;
 $client = new Client();
 $client->setApplicationName('Nome do seu aplicativo');
 $client->setScopes([Sheets::SPREADSHEETS]); // Escopos necessários para gravação
-$client->setAuthConfig('caminho/para/o/arquivo/client_secret.json'); // Configurar o token de acesso
+$client->setAuthConfig('./client_secret.json'); // Configurar o token de acesso
 $client->setAccessType('offline');
 
 // Inicializar o serviço do Google Sheets
